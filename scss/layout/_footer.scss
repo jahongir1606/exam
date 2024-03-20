@@ -1,0 +1,147 @@
+#footer {
+    padding: 96px 80px;
+
+
+
+    .control {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        p {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #4B5563;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #4B5563;
+            background-color: #E5E7EB;
+            border-radius: 18px;
+            padding: 4px 20px;
+
+        }
+    }
+
+    .div {
+
+
+        .div4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: #fff;
+            width: 100%;
+            height: 80px;
+
+
+        }
+
+        .div1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+
+            }
+        }
+
+        .div2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            strong {
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+
+        .div3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px;
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 576px){
+    #footer{
+        .div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    #footer {
+        background-color: #030712;
+
+        .control {
+            p {
+                color: #fff;
+            }
+
+            h4 {
+                color: #fff;
+            }
+
+        }
+
+        .div1 {
+            h1 {
+                color: #fff;
+            }
+        }
+
+        .div2 {
+            strong {
+                color: #fff;
+            }
+        }
+
+        .div3 {
+            p {
+                color: #fff;
+            }
+        }
+
+        .div4 {
+
+            background: #111827;
+
+            p {
+                color: #fff;
+            }
+
+        }
+    }
+}

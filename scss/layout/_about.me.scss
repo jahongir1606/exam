@@ -1,0 +1,122 @@
+#about {
+    background-color: #F9FAFB;
+    padding: 96px 80px;
+
+    .card {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        h4 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #4B5563;
+            background-color: #E5E7EB;
+            padding: 4px 20px;
+            border-radius: 18px;
+            font-family: "Inter";
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+
+        .wrapper-right {
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: 600;
+                font-family: "Inter";
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                font-family: "Inter";
+            }
+
+            .div {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                font-family: "Inter";
+            }
+        }
+
+        .left {
+            width: 584px;
+            position: relative;
+
+
+
+
+
+            .imgto {
+                position: absolute;
+                top: -40px;
+                left: 40px;
+                transition: all 0.7s ease-in-out;
+
+                &:hover {
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+    @media only screen and (max-width: 576px) {
+        #about{
+            padding-left: 70px;
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+            }
+        }
+    }
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    #about{
+        background-color:  #111827;
+
+        .card{
+            h4{
+                color: #111827;
+            }
+        }
+
+        .wrapper{
+            .wrapper-right{
+                h1{
+                    display: none;
+                }
+                p{
+                    color: #fff;
+                }
+                .div{
+                    color: #fff;
+                }
+            }
+        }
+
+
+
+        
+    }
+}

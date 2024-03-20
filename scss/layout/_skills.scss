@@ -1,0 +1,80 @@
+#skills{
+    padding: 96px 80px;
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+        padding-top: 48px;
+
+    }
+
+    .card{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        p{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+            color:#4B5563 ;
+        }
+        h4{
+            font-size: 14px;
+            font-weight: 500;
+            color: #4B5563;
+            background-color: #E5E7EB;
+            border-radius: 18px;
+            padding: 4px 20px;
+        }
+
+   
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    #skills{
+        .wrapper{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #skills{
+        .wrapper{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8,1fr);
+        }
+    }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    #skills{
+        background-color: #030712;
+
+
+       
+        .card{
+            p{
+                color: #fff;
+            }
+            h4{
+                color: #111827;
+            }
+        }
+    }
+}
